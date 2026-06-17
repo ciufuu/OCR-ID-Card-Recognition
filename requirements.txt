@@ -1,0 +1,17 @@
+﻿# FastAPI API runtime (necessary only for API)
+fastapi==0.135.1
+uvicorn[standard]==0.41.0
+python-multipart==0.0.22
+httpx==0.28.1
+requests==2.32.5
+
+# OCR pipeline
+numpy
+opencv-python==4.13.0.92
+easyocr==1.7.2
+torch
+torchvision
+
+# Data export
+pandas==3.0.1
+openpyxl==3.1.5
