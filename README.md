@@ -22,7 +22,7 @@ The primary objective of the project is to implement an efficient Optical Charac
 
 ```text
 ├── images/             # Directory for input ID cards and images to be processed
-├── README-en.md        # Project documentation (English)
+├── README.md           # Project documentation 
 ├── main.py             # Main Python script responsible for running EasyOCR and the processing pipeline
 ├── requirements.txt    # Project dependencies
 └── rezultate.json      # JSON output file containing the extracted data results
