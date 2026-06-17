@@ -1,4 +1,9 @@
-# Practice Project: Text Extraction and Processing using EasyOCR and Ollama
+# Practice Project: Text Extraction and Processing using EasyOCR 🪪
+
+![Python](https://img.shields.io/badge/Python-3.11.9-blue.svg)
+![OCR](https://img.shields.io/badge/OCR-EasyOCR-green.svg)
+![OpenCV](https://img.shields.io/badge/OpenCV-Image%20Processing-orange.svg)
+
 
 This project was developed as part of the internship/practice program at the **Transilvania University of Brașov (UNITBV)**, Faculty of Economic Sciences and Business Administration, Economic Informatics (2nd Year).
 
@@ -23,15 +28,20 @@ The primary objective of the project is to implement an efficient Optical Charac
 └── rezultate.json      # JSON output file containing the extracted data results
 ```
 
+## 🛠️ Tech Stack
 
+1. Python 3.11.9
+1. EasyOCR
+1. OpenCV
+1. NumPy
 
 ## 🛠️ Requirements and Installation
 
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/user/proiect-easyocr-ollama.git
-cd proiect-easyocr-ollama
+git clone https://github.com/ciufuu/ocr-id-card-recognition.git
+cd ocr-id-card-recognition
 ```
 
 ### 2. Install Python dependencies
@@ -58,8 +68,24 @@ The program will:
 2. Preprocess the image
 3. Apply OCR using EasyOCR
 4. Display extracted text in structured format
-5. **Input:** An image containing an invoice or a scanned document.
-6. **EasyOCR:** Analyzes the image, detects characters, and returns a clean, structured file (e.g., JSON) with all relevant data fields.
+
+## ⚙️ How it works
+
+1. Image Preprocessing
+
+- Grayscale conversion
+- Noise reduction
+- Contrast enhancement
+
+2. OCR Processing
+
+- EasyOCR model detects text regions
+- Extracts raw text from image
+
+3. Post-processing
+
+- Cleans and formats extracted text
+- Maps values to fields (Name, CNP, etc.)
 
 ## 🎓 Coordination and Evaluation
 
@@ -70,3 +96,9 @@ The program will:
 ## 📝 License
 
 This repository is created solely for academic and evaluation purposes within the university framework.
+
+## ⭐ Notes
+
+- Results depend on image quality
+- Works best on clear scanned documents
+- Can be extended to other document types
